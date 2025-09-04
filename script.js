@@ -7,7 +7,7 @@
 
       // Perform calculation based on operation
       if (isNaN(num1) || isNaN(num2)) {
-        result = "⚠️ Please enter valid numbers";
+        result = "Please enter valid numbers!";
       } else {
         switch (operation) {
           case "add":
@@ -20,7 +20,7 @@
             result = num1 * num2;
             break;
           case "divide":
-            result = num2 !== 0 ? (num1 / num2) : "⚠️ Cannot divide by zero";
+            result = num2 !== 0 ? (num1 / num2) : "You cannot divide a number by by zero";
             break;
           default:
             result = "Unknown operation";
